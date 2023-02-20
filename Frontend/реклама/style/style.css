@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
 
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,10 +14,10 @@
 
 body {
     background: url(../img/fon.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; 
 }
 
-.conainer {
+.conainer{
     display: flex;
     justify-content: center;
 }
@@ -45,14 +45,19 @@ body {
 
 .wrapper_title {
     display: flex;
-
     font-family: "Sonic 1 Title Screen";
-    color: rgb(66, 60, 149);
     font-size: 44px;
-    margin-top: 2%;
+    margin-top: 1%; 
+}
+.wrapper_title2 {
+    display: flex;
+    font-family: "Sonic 1 Title Screen";
+    padding: 10%;
+    font-size: 44px;
+    margin-top: 1%; 
 }
 
-.header__img__kitty {
+.header__img__kitty{
     width: 77px;
     height: 77px;
 }
@@ -62,7 +67,7 @@ body {
     height: 84px;
 }
 
-.wrapper__info {
+.wrapper__info{
     display: flex;
 
     margin-top: 5%;
@@ -83,11 +88,19 @@ body {
 }
 
 .header {
+    margin-top: 100%;
     font-family: "Sonic 1 Title Screen";
     font-size: 44px;
+    color: black;
+    background-color: #ffffff50;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-p {
+.header:hover{
+    background-color: #ffffff00;
+}
+ p {
     font-family: 'Lusitana', serif;
     font-size: 30px;
 }
@@ -105,6 +118,13 @@ p {
 .slider__wrapper__img {
     width: 100%;
     height: 100%;
+}
+
+.example {
+    width: 776px;
+    height: 500px;
+
+    background-color: blue;
 }
 
 .wrapper__slider {
@@ -164,13 +184,22 @@ a {
     width: 75px;
     height: 75px;
 }
-
-@media screen and (min-width: 339px) and (max-width: 495px) {
+.header2{
+    font-family: "Sonic 1 Title Screen";
+    font-size: 44px;
+}
+@media screen and (min-width: 339px) and (max-width: 495px) { 
 
     .wrapper__header {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .wrapper_title2 {
+        display: flex;
+        justify-content: center;
+        font-family: "Sonic 1 Title Screen";
+        color: rgb(66, 60, 149);
     }
 
     .wrapper__info__img {
@@ -183,6 +212,10 @@ a {
         width: 50%;
     }
 
+    .header2{
+        width: 100%;
+        font-size: 26px;
+    }
     .header {
         width: 100%;
         font-size: 26px;
@@ -210,19 +243,12 @@ a {
         height: 150px;
     }
 
-    .slider__content {
-        width: 330px;
-        height: 250px;
-    }
-
-    .slider__wrapper__img {
-        width: 100%;
-        height: 100%;
-    }
-
     .wrapper__slider {
         width: 330px;
-        height: 250px;
+    }
+    
+    .slider__content {
+        width: 330px;
     }
 
     .wrapper__info {
@@ -250,7 +276,7 @@ a {
 
 }
 
-@media screen and (min-width: 495px) and (max-width: 691px) {
+@media screen and (min-width: 495px) and (max-width: 691px) { 
     .wrapper__header {
         width: 100%;
         display: flex;
@@ -271,6 +297,10 @@ a {
         width: 50%;
     }
 
+    .header2{
+        width: 100%;
+        font-size: 30px;
+    }
     .header {
         width: 100%;
         font-size: 30px;
@@ -281,6 +311,12 @@ a {
         height: 55px;
     }
 
+        .wrapper_title2 {
+        display: flex;
+        justify-content: center;
+        font-family: "Sonic 1 Title Screen";
+        color: rgb(66, 60, 149);
+    }
     .wrapper_title {
         display: flex;
         justify-content: center;
@@ -298,19 +334,16 @@ a {
         height: 200px;
     }
 
-    .slider__content {
-        width: 100%;
-        height: 350px;
-    }
-
-    .slider__wrapper__img {
-        width: 100%;
-        height: 100%;
-    }
-
     .wrapper__slider {
         width: 80%;
-        height: 350px;
+    }
+
+    .example {
+        width: 100%;
+    }
+
+    .slider__content {
+        width: 100%;
     }
 
     .wrapper__info {
@@ -333,7 +366,7 @@ a {
     }
 }
 
-@media screen and (min-width: 691px) and (max-width: 785px) {
+@media screen and (min-width: 691px) and (max-width: 785px) { 
     .wrapper__header {
         width: 100%;
         display: flex;
@@ -353,7 +386,10 @@ a {
         font-size: 28px;
         width: 65%;
     }
-
+    .header2{
+        width: 100%;
+        font-size: 36px;
+    }
     .header {
         width: 100%;
         font-size: 36px;
@@ -381,19 +417,16 @@ a {
         height: 200px;
     }
 
-    .slider__content {
-        width: 100%;
-        height: 350px;
-    }
-
-    .slider__wrapper__img {
-        width: 100%;
-        height: 100%;
-    }
-
     .wrapper__slider {
         width: 80%;
-        height: 350px;
+    }
+
+    .example {
+        width: 100%;
+    }
+    
+    .slider__content {
+        width: 100%;
     }
 
     .wrapper__info {
